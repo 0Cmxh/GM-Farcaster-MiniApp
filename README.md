@@ -117,35 +117,7 @@ The GM smart contract on Base handles:
 - ✅ Total GM count and user statistics
 - ✅ Gasless transactions via account abstraction
 
-**Contract Address**: `0x4e7B93AB2d7eE529B13cC902eA8D5611bB3D165c` (Base)
-
-## 🌐 Environment Setup
-
-The app requires the following environment variables:
-
-```bash
-# Neynar API for Farcaster data
-NEXT_PUBLIC_NEYNAR_API_KEY=your_key
-
-# Your app URL
-NEXT_PUBLIC_APP_URL=https://your-app.vercel.app
-
-# Optional: Custom RPC
-NEXT_PUBLIC_BASE_RPC_URL=https://mainnet.base.org
-```
-
-See `.env.example` for full configuration.
-
-## 🚀 Deployment
-
-This app is designed to be deployed on Vercel:
-
-1. Fork this repository
-2. Connect to Vercel
-3. Add environment variables
-4. Deploy!
-
-The app will be available as a Farcaster Mini App that can be embedded in casts and opened in any Farcaster client.
+**Contract Address**: `0x67FafE153aeB3c2caae7a138C1409aB53f680C75` (Base)
 
 ## 🎯 Why Base?
 
@@ -183,8 +155,8 @@ This project demonstrates:
 
 - **Live App**: [gmfarcaster.vercel.app](https://gmfarcaster.vercel.app)
 - **Base**: [base.org](https://base.org)
-- **Farcaster**: [farcaster.xyz](https://farcaster.xyz)
-- **Contract Explorer**: [View on BaseScan](https://basescan.org/address/0x4e7B93AB2d7eE529B13cC902eA8D5611bB3D165c)
+- **Farcaster**: [farcaster](https://farcaster.xyz/miniapps/zOCvTtAbTpBY/gm-farcaster)
+- **Contract Explorer**: [View on BaseScan](https://basescan.org/address/0x67FafE153aeB3c2caae7a138C1409aB53f680C75)
 
 ---
 
