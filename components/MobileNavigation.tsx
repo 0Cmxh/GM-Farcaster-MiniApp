@@ -17,6 +17,17 @@ export function MobileNavigation() {
       )
     },
     {
+      href: '/celo',
+      label: 'Celo',
+      icon: (active: boolean) => (
+        <img
+          src="/celo.png"
+          alt="Celo"
+          className={`w-6 h-6 ${active ? '' : 'opacity-40'}`}
+        />
+      )
+    },
+    {
       href: '/leaderboard',
       label: 'Leaderboard',
       icon: (active: boolean) => (
