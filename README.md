@@ -11,7 +11,7 @@ A Farcaster Mini App that brings daily "Good Morning" rituals on-chain. Built on
 
 GM Farcaster Mini App transforms the simple act of saying "Good Morning" into an engaging on-chain experience. Users can send their daily GM, maintain streaks, compete on leaderboards, and connect with the Farcaster community—all with **free, gasless transactions** on Base.
 
-**Live Demo**: [Try it on Farcaster](https://gmfarcaster.vercel.app)
+**Live Demo**: [Try it on Farcaster](https://farcaster.xyz/miniapps/zOCvTtAbTpBY/gm-farcaster)
 
 ## ✨ Key Features
 
@@ -183,7 +183,7 @@ This project demonstrates:
 
 ## 🔗 Links
 
-- **Live App**: [gmfarcaster.vercel.app](https://gmfarcaster.vercel.app)
+- **Live App**: [gmfarcaster.vercel.app](https://farcaster.xyz/miniapps/zOCvTtAbTpBY/gm-farcaster)
 - **Base**: [base.org](https://base.org)
 - **Celo**: [celo.org](https://celo.org)
 - **Farcaster**: [farcaster](https://farcaster.xyz/miniapps/zOCvTtAbTpBY/gm-farcaster)
