@@ -1,15 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
-  async redirects() {
-    return [
-      {
-        source: '/.well-known/farcaster.json',
-        destination: 'https://api.farcaster.xyz/miniapps/hosted-manifest/0199a218-b467-4c2d-5f27-a8c1fcfe58db',
-        permanent: false, // 307 redirect
-      },
-    ]
-  },
   images: {
     remotePatterns: [
       {
