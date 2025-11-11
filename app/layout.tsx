@@ -7,58 +7,54 @@ const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://gmfarcaster.vercel.a
 
 const gmEmbed = {
   version: "1",
-  imageUrl: `${baseUrl}/logo.png`,
+  imageUrl: `${baseUrl}/api/embed-image`, // 3:2 aspect ratio (1200x800)
   button: {
-    title: "☀️ Start GM",
+    title: "GM",
     action: {
       type: "launch_miniapp",
-      name: "GM",
+      name: "GM Farcaster",
       url: baseUrl,
       splashImageUrl: `${baseUrl}/logo.png`,
-      splashBackgroundColor: "#FEF3E2"
+      splashBackgroundColor: "#5c44d8"
     }
   }
 }
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: 'GM - Daily Streak Tracker',
-  description: 'Track your daily GM streak on Base. Send free GM transactions and compete on the leaderboard!',
+  title: 'GM Farcaster',
+  description: 'Post a GM every 24 hours to build streaks on Farcaster. Simple daily free interaction that keeps your presence active and tracks consistency.',
   openGraph: {
-    title: 'GM - Daily Streak Tracker',
-    description: 'Track your daily GM streak on Base. Send free GM transactions and compete on the leaderboard!',
+    title: 'GM Farcaster',
+    description: 'Post a GM every 24 hours and keep your streak on Farcaster.',
     type: 'website',
-    siteName: 'GM Tracker',
+    siteName: 'GM Farcaster',
     images: [
       {
-        url: '/logo.png',
-        width: 1024,
-        height: 1024,
-        alt: 'GM Daily Streak Tracker Logo',
+        url: '/api/og-image',
+        width: 1200,
+        height: 630,
+        alt: 'GM Farcaster',
       }
     ],
     url: '/',
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@gmtracker',
-    creator: '@gmtracker',
-    title: 'GM - Daily Streak Tracker',
-    description: 'Track your daily GM streak on Base. Send free GM transactions and compete on the leaderboard!',
+    site: '@gmfarcaster',
+    creator: '@gmfarcaster',
+    title: 'GM Farcaster',
+    description: 'Post a GM every 24 hours and keep your streak on Farcaster.',
     images: [
       {
-        url: '/logo.png',
-        alt: 'GM Daily Streak Tracker Logo',
+        url: '/api/og-image',
+        alt: 'GM Farcaster',
       }
     ],
   },
   robots: {
     index: true,
     follow: true,
-  },
-  other: {
-    'fc:miniapp': JSON.stringify(gmEmbed),
-    'fc:frame': JSON.stringify(gmEmbed),
   },
 }
 
@@ -69,6 +65,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="fc:miniapp" content={JSON.stringify(gmEmbed)} />
+        <meta name="fc:frame" content={JSON.stringify(gmEmbed)} />
+      </head>
       <body className="bg-gradient-to-br from-orange-50 to-yellow-50 min-h-screen pb-20">
         <MiniAppProvider>
           {children}
