@@ -1,0 +1,36 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjI2MzYwMCwidHlwZSI6ImF1dGgiLCJrZXkiOiIweDNmNTQyYTU4OTYzRTA0RjM3NzhmQjY5MjYxMDczRjM5OUUyYTQzQjYifQ",
+    "payload": "eyJkb21haW4iOiJnbWZhcmNhc3Rlci52ZXJjZWwuYXBwIn0",
+    "signature": "UTEBlvTFVTimqLv3pWPH3bTFQ4/jilkmEjw8YTc8YD4M+KsbjPzFGhQgUnu+ddqpmbI+GAgTbX8rzRP+nyJR9Bw="
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "GM Farcaster",
+    "homeUrl": "https://gmfarcaster.vercel.app",
+    "iconUrl": "https://gmfarcaster.vercel.app/icon.png",
+    "imageUrl": "https://gmfarcaster.vercel.app/logo.png",
+    "buttonTitle": "GM",
+    "splashImageUrl": "https://gmfarcaster.vercel.app/splash.png",
+    "splashBackgroundColor": "#5c44d8",
+    "webhookUrl": "https://gmfarcaster.vercel.app/api/webhook",
+    "subtitle": "Post your daily GM keep streak",
+    "description": "Post a GM every 24 hours to build streaks on Farcaster Simple daily free interaction that keeps your presence active and tracks consistency",
+    "primaryCategory": "social",
+    "tags": [
+      "social",
+      "messaging",
+      "streaks",
+      "dailygm",
+      "farcaster"
+    ],
+    "heroImageUrl": "https://gmfarcaster.vercel.app/hero.png",
+    "tagline": "say gm every day",
+    "ogTitle": "GM Farcaster",
+    "ogDescription": "Post a GM every 24 hours and keep your streak on Farcaster.",
+    "ogImageUrl": "https://gmfarcaster.vercel.app/og-image.png"
+  },
+  "baseBuilder": {
+    "ownerAddress": "0x652C3a13a318a95A50D4bac8e080F992566aA1AD"
+  }
+}
